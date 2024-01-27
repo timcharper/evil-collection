@@ -57,7 +57,7 @@
     "C" 'dired-do-copy
     "B" 'dired-do-byte-compile
     "D" 'dired-do-delete
-    "gG" 'dired-do-chgrp ;; FIXME: This can probably live on a better binding.
+    "G" 'evil-goto-line
     "H" 'dired-do-hardlink
     "L" 'dired-do-load
     "M" 'dired-do-chmod
@@ -125,6 +125,7 @@
     ;; sort
     "o" 'dired-sort-toggle-or-edit
     ;; moving
+    "gg" 'evil-goto-first-line
     "<" 'dired-prev-dirline
     ">" 'dired-next-dirline
     "^" 'dired-up-directory
