@@ -55,7 +55,7 @@
     "C" 'dired-do-copy
     "B" 'dired-do-byte-compile
     "D" 'dired-do-delete
-    "gG" 'dired-do-chgrp ;; FIXME: This can probably live on a better binding.
+    "G" 'evil-goto-line
     "H" 'dired-do-hardlink
     "L" 'dired-do-load
     "M" 'dired-do-chmod
@@ -120,6 +120,7 @@
     "gf" 'dired-find-file
     (kbd "C-m") 'dired-find-file
     "gr" 'revert-buffer
+    "gg" 'evil-goto-first-line
     "i" 'dired-toggle-read-only
     "I" 'dired-maybe-insert-subdir
     "J" 'dired-goto-file
