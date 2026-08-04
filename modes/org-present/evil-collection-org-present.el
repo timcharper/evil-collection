@@ -36,8 +36,8 @@
 (defun evil-collection-org-present-setup ()
   "Set up `evil' bindings for `org-present'."
   (evil-collection-define-key 'normal 'org-present-mode-keymap
-    "J" 'org-present-next
-    "K" 'org-present-prev
+    ;; "J" 'org-present-next
+    ;; "K" 'org-present-prev
     (kbd "SPC") 'org-present-next
     (kbd "S-SPC") 'org-present-prev
     (kbd "M-j") 'org-present-next
@@ -52,8 +52,8 @@
     "gg" 'org-present-beginning
     "G" 'org-present-end)
   (evil-collection-bind 'org-present-mode-keymap
-                        'next-item 'org-present-next
-                        'prev-item 'org-present-prev
+                        ;; 'next-item 'org-present-next ; would bind "gj"
+                        ;; 'prev-item 'org-present-prev ; would bind "gk"
                         'next-section 'org-present-next
                         'prev-section 'org-present-prev
                         'quit 'org-present-quit

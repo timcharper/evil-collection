@@ -92,15 +92,15 @@ you can do:
     ;; TODO: To mark subtree ("C-c @"), we would need to define a tree object.
 
     ;; motion
-    (kbd "M-h") 'outline-promote ; Org-mode has "M-<left>", Evil-org has "M-h"
-    (kbd "M-j") 'outline-move-subtree-down ; Org-mode has "M-<down>", Evil-org has "M-j"
-    (kbd "M-k") 'outline-move-subtree-up ; Org-mode has "M-<up>", Evil-org has "M-k"
-    (kbd "M-l") 'outline-demote ; Org-mode has "M-<right>", Evil-org has "M-l"
+    ;; (kbd "M-h") 'outline-promote ; Org-mode has "M-<left>", Evil-org has "M-h"
+    ;; (kbd "M-j") 'outline-move-subtree-down ; Org-mode has "M-<down>", Evil-org has "M-j"
+    ;; (kbd "M-k") 'outline-move-subtree-up ; Org-mode has "M-<up>", Evil-org has "M-k"
+    ;; (kbd "M-l") 'outline-demote ; Org-mode has "M-<right>", Evil-org has "M-l"
 
     (kbd "M-<return>") 'outline-insert-heading) ; Org-mode has "M-<return>"
   (evil-collection-bind 'outline-mode-map
-                        'next-item 'outline-forward-same-level
-                        'prev-item 'outline-backward-same-level
+                        ;; 'next-item 'outline-forward-same-level ; would bind "gj"
+                        ;; 'prev-item 'outline-backward-same-level ; would bind "gk"
                         'next-section 'outline-next-visible-heading
                         'prev-section 'outline-previous-visible-heading
                         'next-section-2 'outline-forward-same-level
